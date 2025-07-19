@@ -1,0 +1,153 @@
+<!-- ----------------------------------------
+  Step 1: HTML 基本構造と head 要素
+---------------------------------------- -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>シネマの小窓 | 映画を通して世界を見る</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- ----------------------------------------
+  Step 2: header（タイトル、ナビゲーション）
+---------------------------------------- -->
+<header>
+  <h1>シネマの小窓</h1>
+  <p>映画を通して世界を見る、新しい視点を見つける</p>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">ホーム</a></li>
+      <li><a href="#">レビュー一覧</a></li>
+      <li><a href="#">ジャンル</a></li>
+      <li><a href="#">おすすめ</a></li>
+      <li><a href="#">プロフィール</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ----------------------------------------
+  Step 3: コンテナレイアウトと main 要素
+---------------------------------------- -->
+<div class="container">
+  <main>
+
+    <!-- Step 4: 特集セクション -->
+    <section>
+      <h2>今月のピックアップ</h2>
+      <article class="spotlight">
+        <img src="img/spotlight.jpg" alt="特集映画のポスター">
+        <div class="article-content">
+          <h3>『世界の中心で、匙を投げる』</h3>
+          <div class="rating">
+            ★★★★☆ 4.5/5.0
+          </div>
+          <p>環境危機に直面する2035年の世界を舞台に、科学者と活動家の物語が交差する。壮大なビジュアルと共に、人間の絆と希望、諦めを描く感動作。</p>
+          <p>【考察】この作品は気候変動や社会格差といった現代の課題を映画の言語で表現し、若い世代に何ができるかを問いかけている。</p>
+          <a href="#" class="btn">レビューを読む</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Step 5: 最新レビューセクション -->
+    <section>
+      <h2>最新のレビュー</h2>
+      <div class="review-grid">
+
+        <article>
+          <div class="article-img">
+            <img src="img/hikarino-niwa.jpg" alt="映画『光の庭』のポスター">
+          </div>
+          <div class="article-content">
+            <h3>『光の庭』</h3>
+            <div class="rating">★★★★☆ 4.0/5.0</div>
+            <p>図書館の静けさ、光の差し込み方、登場人物の沈黙の演技が印象的な一作。庭には二羽ニワトリがいる。</p>
+            <div class="meta">
+              <time datetime="2025-05-10">2025.05.10</time>
+              <span>8コメント</span>
+            </div>
+            <a href="#" class="btn">続きを読む</a>
+          </div>
+        </article>
+
+        <article>
+          <div class="article-img">
+            <img src="img/kazemachi.jpg" alt="映画『風待ち駅』のポスター">
+          </div>
+          <div class="article-content">
+            <h3>『風待ち駅』</h3>
+            <div class="rating">★★★☆☆ 3.5/5.0</div>
+            <p>空に浮かぶ駅や透明な風景が幻想的。ストーリーよりも世界観の体験に重点が置かれている作品。</p>
+            <div class="meta">
+              <time datetime="2025-05-03">2025.05.03</time>
+              <span>12コメント</span>
+            </div>
+            <a href="#" class="btn">続きを読む</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="more-link">
+        <a href="#" class="btn btn-secondary">もっと見る</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ----------------------------------------
+    Step 6: aside サイドバー
+  ---------------------------------------- -->
+  <aside>
+    <div class="sidebar-section profile">
+      <img src="img/profile.jpg" alt="プロフィール画像">
+      <h3>こんにちは！</h3>
+      <p>映画好きの大学生、？？？？？です。週1でレビューを更新中！映像や物語の分析が好きです。</p>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>ジャンルから探す</h3>
+      <ul class="genre-list">
+        <li><a href="#">ドラマ <span class="genre-count">24</span></a></li>
+        <li><a href="#">アクション <span class="genre-count">18</span></a></li>
+        <li><a href="#">ファンタジー <span class="genre-count">15</span></a></li>
+        <li><a href="#">サスペンス <span class="genre-count">12</span></a></li>
+        <li><a href="#">SF <span class="genre-count">10</span></a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- ----------------------------------------
+  Step 7: footer フッターエリア
+---------------------------------------- -->
+<footer>
+  <h2 class="sr-only">フッター情報</h2>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>シネマの小窓</h3>
+      <p>映画を通して世界を見る、新しい視点を見つける映画レビューサイト</p>
+    </div>
+    <div class="footer-section">
+      <h3>コンテンツ</h3>
+      <ul>
+        <li><a href="#">最新レビュー</a></li>
+        <li><a href="#">特集記事</a></li>
+        <li><a href="#">映画学習</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>リンク</h3>
+      <ul>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">サイトマップ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <small>&copy; 2025 シネマの小窓 - 映画レビューサイト</small>
+  </div>
+</footer>
+</body>
+</html>
